@@ -1,5 +1,5 @@
 import blurbSharedFields from "./blurbSharedFields";
-import icon from "react-icons/lib/md/text-fields";
+import { MdTextFields as icon } from "react-icons/md";
 
 export default {
   name: "textBlurb",

@@ -1,9 +1,9 @@
-import Settings from "react-icons/lib/md/settings";
+import { MdSettings as icon } from "react-icons/md";
 
 export default {
   name: "siteConfig",
   title: "Site config",
-  icon: Settings,
+  icon: icon,
   type: "document",
   fields: [
     {

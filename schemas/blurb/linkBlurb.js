@@ -1,10 +1,10 @@
 import blurbSharedFields from "./blurbSharedFields";
-import icon from "react-icons/lib/go/Link";
+import { GoLink as linkIcon } from "react-icons/go";
 
 export default {
   name: "linkBlurb",
   title: "Link",
-  icon,
+  linkIcon,
   type: "document",
   fields: [
     ...blurbSharedFields,

@@ -1,9 +1,9 @@
-import WebAsset from "react-icons/lib/md/web-asset";
+import { MdWebAsset as icon } from "react-icons/md";
 
 export default {
   name: "page",
   title: "Page",
-  icon: WebAsset,
+  icon,
   type: "document",
   fields: [
     {
