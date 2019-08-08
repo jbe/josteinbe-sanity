@@ -21,7 +21,7 @@ export default {
     {
       name: "explanation",
       title: "Explanation",
-      type: "blockContent"
+      type: "simplePortableText"
     }
   ],
 

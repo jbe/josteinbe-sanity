@@ -1,31 +1,51 @@
-// First, we must import the schema creator
 import createSchema from "part:@sanity/base/schema-creator";
-
-// Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
 
-// We import object and document schemas
-import blockContent from "./blockContent";
 import tag from "./tag";
-import page from "./page";
-import siteConfig from "./siteConfig";
 import * as allBlurbs from "./blurb";
 
-// Then we give our schema to the builder and provide the result to Sanity
+import page from "./documents/page";
+import route from "./documents/route";
+import siteConfig from "./documents/siteConfig";
+
+import cta from "./objects/cta";
+import embedHTML from "./objects/embedHTML";
+import figure from "./objects/figure";
+import internalLink from "./objects/internalLink";
+import link from "./objects/link";
+import portableText from "./objects/portableText";
+import simplePortableText from "./objects/simplePortableText";
+
+import hero from "./objects/section/hero";
+import imageSection from "./objects/section/imageSection";
+import mailchimp from "./objects/section/mailchimp";
+import textSection from "./objects/section/textSection";
+import premadeSection from "./objects/section/premadeSection";
+import blurbSection from "./objects/section/blurbSection";
+
 export default createSchema({
-  // We name our schema
   name: "default",
-  // Then proceed to concatenate our document type
-  // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    // The following are document types which will appear
-    // in the studio.
-    siteConfig,
     ...Object.values(allBlurbs),
-    page,
     tag,
-    // When added to this list, object types can be used as
-    // { type: 'typename' } in other document schemas
-    blockContent
+
+    page,
+    route,
+    siteConfig,
+
+    cta,
+    embedHTML,
+    figure,
+    internalLink,
+    link,
+    portableText,
+    simplePortableText,
+
+    hero,
+    imageSection,
+    mailchimp,
+    textSection,
+    premadeSection,
+    blurbSection
   ])
 });

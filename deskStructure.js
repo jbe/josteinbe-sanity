@@ -35,6 +35,7 @@ export default () =>
             ])
         ),
       S.documentTypeListItem("page").title("Pages"),
+      S.documentTypeListItem("route").title("Routes"),
       S.listItem()
         .title("Site config")
         .icon(Settings)
