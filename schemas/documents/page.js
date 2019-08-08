@@ -1,10 +1,10 @@
-import WebAsset from "react-icons/lib/md/web-asset";
+import { MdWebAsset } from "react-icons/md";
 
 export default {
   name: "page",
   type: "document",
   title: "Page",
-  icon: WebAsset,
+  icon: MdWebAsset,
   fieldsets: [
     {
       title: "SEO & metadata",

@@ -1,12 +1,11 @@
-import Settings from "react-icons/lib/md/settings";
-
+import MdSettings from "react-icons/md";
 import bcp47 from "bcp47";
 
 export default {
   name: "siteConfig",
   type: "document",
   title: "Site configuration",
-  icon: Settings,
+  icon: MdSettings,
   // https://www.sanity.io/docs/experimental/ui-affordances-for-actions
   __experimental_actions: [/* create, delete, */ "update", "publish"],
   fieldsets: [{ name: "footer", title: "Footer" }],
