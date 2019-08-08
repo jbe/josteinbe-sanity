@@ -1,11 +1,11 @@
 import blurbSharedFields from "./blurbSharedFields";
-import Image from "react-icons/lib/md/image";
+import { mdImage as imageIcon } from "react-icons/md";
 
 export default {
   name: "imageBlurb",
   title: "Image blurb",
   type: "document",
-  icon: Image,
+  icon: imageIcon,
   fields: [
     ...blurbSharedFields,
     {

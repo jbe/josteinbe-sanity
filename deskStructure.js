@@ -1,6 +1,8 @@
 import S from "@sanity/desk-tool/structure-builder";
-import Settings from "react-icons/lib/md/settings";
-import blurbsIcon from "react-icons/lib/md/textsms";
+import {
+  MdSettings as settingsIcon,
+  MdTextsms as blurbsIcon
+} from "react-icons/md";
 import * as allBlurbs from "./schemas/blurb";
 
 // const sectionItems = S.listItem()
@@ -38,7 +40,7 @@ export default () =>
       S.documentTypeListItem("route").title("Routes"),
       S.listItem()
         .title("Site config")
-        .icon(Settings)
+        .icon(settingsIcon)
         .child(
           S.editor()
             .id("siteConfig")

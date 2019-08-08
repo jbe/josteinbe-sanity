@@ -1,10 +1,10 @@
 import blurbSharedFields from "./blurbSharedFields";
-import icon from "react-icons/lib/go/Milestone";
+import { GoMilestone as rabbitHoleIcon } from "react-icons/go";
 
 export default {
   name: "rabbitHoleBlurb",
   title: "Rabbit hole blurb",
-  icon,
+  rabbitHoleIcon,
   type: "document",
   fields: [
     ...blurbSharedFields,
