@@ -10,6 +10,7 @@ import siteConfig from "./documents/siteConfig";
 
 import cta from "./objects/cta";
 import embedHTML from "./objects/embedHTML";
+import rabbitHole from "./objects/rabbitHole";
 import figure from "./objects/figure";
 import internalLink from "./objects/internalLink";
 import link from "./objects/link";
@@ -35,6 +36,7 @@ export default createSchema({
 
     cta,
     embedHTML,
+    rabbitHole,
     figure,
     internalLink,
     link,
