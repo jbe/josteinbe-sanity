@@ -17,6 +17,11 @@ export default {
       name: "altText",
       title: "Alternative text",
       type: "string"
+    },
+    {
+      name: "text",
+      title: "Text",
+      type: "portableText"
     }
   ],
 
